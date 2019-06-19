@@ -1,3 +1,7 @@
+# Not Trello Boards
+
+![App screenshot](./app.png)
+
 # Installation
 
 git clone
