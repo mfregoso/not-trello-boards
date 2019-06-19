@@ -1,0 +1,30 @@
+.card {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2%;
+    margin: 3px 0;
+}
+
+.card-text {
+    flex: 1;
+    padding: 0 6px;
+}
+
+.move-card-arrow {
+    flex: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.move-card-arrow.true {
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(211, 211, 211);
+    }
+}

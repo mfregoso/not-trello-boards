@@ -1,0 +1,48 @@
+.bg(@bColor) {
+    background-color: @bColor;
+}
+
+.board {
+    flex: 1;
+    margin-left: 25px;
+    &:last-of-type {
+        margin-right: 25px;
+    }
+    min-width: 180px;
+}
+
+.board-header {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.board-0 {
+    .bg(#8e6e95);
+}
+
+.board-1 {
+    .bg(#39a59c);
+}
+
+.board-2 {
+    .bg(#344759);
+}
+
+.board-3 {
+    .bg(#e8741e);
+}
+
+.add-card-btn {
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(88, 88, 88);
+    &:hover {
+        background-color: rgb(44, 44, 44);
+    }
+}
