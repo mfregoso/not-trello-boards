@@ -18,3 +18,9 @@ export const moveCard = (state, {boardIndex, cardIndex, moveForward}) => {
   boards[newBoardIndex].cards.splice(cardIndex, 0, card);
   return {...state, boards}
 };
+
+export const addBoard = (state, newTitle) => {
+  const newBoard = [{title: newTitle, cards: []}];
+  const boards = newBoard.concat(state.boards);
+  return {...state, boards};
+}

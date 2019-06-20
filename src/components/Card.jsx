@@ -5,6 +5,7 @@ const Card = (props) => {
     const {cardText, boardIndex, cardIndex, lastBoard, moveCard} = props;
     const canMoveBack = boardIndex !== 0;
     const canMoveForward = !lastBoard;
+    
     const moveCardHandler = (moveForward, isAllowed) => {
         if (isAllowed) moveCard(boardIndex, cardIndex, moveForward);
     };

@@ -1,8 +1,10 @@
 # Not Trello Boards
 
+Produced using React, Redux and LESS for a quick front end challenge
+
 ![App screenshot](./app.png)
 
-# Installation
+## Installation
 
 git clone
 

@@ -5,6 +5,7 @@ import "../styles/board.less"
 const Board = (props) => {
   const { boardIndex, lastBoard, board, addCard, changeBoardTitle, moveCard } = props;
   const { title, cards } = board;
+
   const newCardPrompt = () => {
     const cardText = window.prompt("Enter text to add a card");
     if (cardText) addCard(boardIndex, cardText);
@@ -21,7 +22,7 @@ const Board = (props) => {
         className={`board-header board-${(boardIndex + 4) % 4}`}
         onClick={boardNamePrompt}
       >
-        {title || "Unnamed"}
+        {title}
       </div>
       <div className="cards-list">
         {(cards || []).map((cardText, idx) => {
@@ -39,7 +40,7 @@ const Board = (props) => {
       </div>
       <div onClick={newCardPrompt} className="add-card-btn">
         Add Card
-            </div>
+      </div>
     </div>
   )
 }
